@@ -1,3 +1,16 @@
-CREATE TABLE ApartmentList (id smallint unsigned not null auto_increment, name varchar(20) not null, constraint pk_example primary key (id) );
+Create Database subLeasing
+use subleasing
+CREATE TABLE ApartmentList 
+(id smallint unsigned not null auto_increment,
+Name varChar(25),
+City varchar(20) not null,
+Address varchar(40) not null,
+Price double(10,2) not null,
+StartDate Date not null,
+EndDate Date not null,
+PetsAllowed Boolean,
+Amenities1 varChar(20),
+Amenities2 varChar(20),
+constraint pk_example primary key (id));
 
 
