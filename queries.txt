@@ -1,5 +1,7 @@
 Create Database subLeasing
+
 use subleasing
+
 CREATE TABLE ApartmentList 
 (id smallint unsigned not null auto_increment,
 Name varChar(25),
@@ -12,5 +14,16 @@ PetsAllowed Boolean,
 Amenities1 varChar(20),
 Amenities2 varChar(20),
 constraint pk_example primary key (id));
+
+INSERT INTO ApartmentList ( id, Name, City, Address, Price,StartDate, EndDate,PetsAllowed,Amenities1,Amenities2 ) 
+VALUES ( null, 'Hub apt1',
+'Columbia',
+'1409 Main Street',
+'400.25',
+'2009-01-01',
+'2010-09-09',
+'1',
+'Pool',
+'Wood Floor' );
 
 
