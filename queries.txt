@@ -1,0 +1,14 @@
+CREATE TABLE ApartmentList 
+( id smallest unsigned not null auto_increment,
+Name as varChar(25),
+City as varchar(20) not null,
+Address as varchar(40) not null,
+Price as double(10,2) not null,
+StartDate as Date not null,
+EndDate as Date not null,
+PetsAllowed as Boolean,
+Amenities1 as varChar(20),
+Amenities2 as varChar(20));
+
+
+
